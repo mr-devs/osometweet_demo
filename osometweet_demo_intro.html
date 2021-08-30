@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+
+    <!-- DOC DESCRIPTION -->
+    <meta charset="utf-8">
+    <title>osometweet crash course</title>
+    <meta name="description" content="Crash course on the OSoMeTweet Python package for gathering Twitter data with V2 API endpoints.">
+    <meta name="author" content="Matthew R. DeVerna">
+
+    <!-- MOBILE STUFF -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- REVEAL.JS STYLE SHEET -->
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+
+    <!-- REVEAL.JS AVAILABLE THEMES -->
+    <!-- <link rel="stylesheet" href="dist/theme/black.css"> -->
+    <link rel="stylesheet" href="dist/theme/white.css">
+    <!-- <link rel="stylesheet" href="dist/theme/league.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/beige.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/sky.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/night.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/serif.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/simple.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/solarized.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/blood.css"> -->
+    <!-- <link rel="stylesheet" href="dist/theme/moon.css"> -->
+
+    <!-- THEME USED FOR HIGHLIGHTED CODE -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <!-- INCLUDE IF YOU WANT TO USE MATH EQUATIONS -->
+    <script src="plugin/math/math.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+    
+    <!-- INCLUDE VEGALITE STUFF INCASE YOU WANT TO INCLUDE INTERACTIVE FIGURES -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@5"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+  </head>
+  <body>
+
+    <!-- BEGIN SLIDES -->
+    <div class="reveal">
+      <div class="slides"> 
+
+        <section>
+          <div class="r-vstack">
+            <p><code>OSoMeTweet</code> crash course</p>
+            <p style="font-size:15px">Matthew R. DeVerna</p>
+            <img style="height:200px" src="https://media.tenor.com/images/38cc3b4b904e0bf49df7dce2039a74a1/tenor.gif">
+            <img style="width: 300px;" src="https://raw.githubusercontent.com/mr-devs/ICWSM_2021_CoVaxxy_Demo/main/photos/observatoryonsocialmedia_lockup_WEB_h1.png">
+
+            <p style="font-size: 12px">Date: September 3rd, 2021</p>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+
+    <!-- Set up reveal.js and plugins -->
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+      });
+      // This line includes the 'c'ount and 't'otal
+      // number of slides in the bottom right of the presentation
+      Reveal.initialize({ slideNumber: 'c/t' });
+    </script>
+  </body>
+</html>
