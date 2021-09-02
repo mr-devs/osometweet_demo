@@ -30,11 +30,11 @@
 
     <!-- REVEAL.JS AVAILABLE THEMES -->
     <!-- <link rel="stylesheet" href="dist/theme/black.css"> -->
-    <link rel="stylesheet" href="dist/theme/white.css">
+    <!-- <link rel="stylesheet" href="dist/theme/white.css"> -->
     <!-- <link rel="stylesheet" href="dist/theme/league.css"> -->
     <!-- <link rel="stylesheet" href="dist/theme/beige.css"> -->
-    <!-- <link rel="stylesheet" href="dist/theme/sky.css"> -->
-    <!-- <link rel="stylesheet" href="dist/theme/night.css"> -->
+    <link rel="stylesheet" href="dist/theme/sky.css">
+    <!-- <link rel="stylesheet" href="dist/theme/night.css">  -->
     <!-- <link rel="stylesheet" href="dist/theme/serif.css"> -->
     <!-- <link rel="stylesheet" href="dist/theme/simple.css"> -->
     <!-- <link rel="stylesheet" href="dist/theme/solarized.css"> -->
@@ -49,7 +49,11 @@
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <!-- FEATHER ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <!-- INCLUDE VEGALITE STUFF INCASE YOU WANT TO INCLUDE INTERACTIVE FIGURES -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@5"></script>
@@ -65,15 +69,38 @@
           <div class="r-vstack">
             <p><code>OSoMeTweet</code> crash course</p>
             <p style="font-size:15px">Matthew R. DeVerna</p>
+            <p style="font-size:13px">
+              <i style="height: 15px;" data-feather="twitter"></i> → @mdeverna2
+              <br>
+              <i style="height: 15px;" data-feather="info"></i>→ matthewdeverna.com
+            </p>
             <img style="height:200px" src="https://media.tenor.com/images/38cc3b4b904e0bf49df7dce2039a74a1/tenor.gif">
             <img style="width: 300px;" src="https://raw.githubusercontent.com/mr-devs/ICWSM_2021_CoVaxxy_Demo/main/photos/observatoryonsocialmedia_lockup_WEB_h1.png">
 
             <p style="font-size: 12px">Date: September 3rd, 2021</p>
           </div>
         </section>
+
+        <section data-background-iframe="https://osome.iu.edu/tools" data-background-interactive>
+          <div style="position: absolute; width: 30%; right: 0; margin-top: 50%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(243, 234, 234, 0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 10px; font-size: 20px; text-align: center;">
+            <h2 style="font-size: 20px; color: #fff;">OSoMe tools</h2>
+            <p style="font-size: 12px;">
+              Our lab has developed many tools using the Twitter
+              API to help us understand the spread of information
+              on social media.
+              <br>
+              (https://osome.iu.edu/tools)
+            </p>
+          </div>
+        </section>
         
       </div>
     </div>
+
+    <!-- THIS REPLACES FEATHER ICONS w/ SVG ICONS-->
+    <script>
+      feather.replace()
+    </script>
 
     <!-- Set up reveal.js and plugins -->
     <script src="dist/reveal.js"></script>
